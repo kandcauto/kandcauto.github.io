@@ -1,0 +1,50 @@
+!!! 5
+%html
+  %head
+    %title K & C AutoElectrics
+
+  %body
+    %nav
+      %ul
+        %li
+          %img{:src => 'http://haml.info/images/haml.png'}
+        %li Get a quote
+        %li{:class => 'mobile'} 0400000000
+
+    %main
+      %section{:class => 'hero'}
+        %div{:class => 'mission'}
+          %h1 You drive it, We fix it.
+          %h2 etcetc
+          %p etcetc
+        %aside{:class => 'hero-image'}
+
+      %section{:class => 'partners'}
+        %img{:src => '/'}
+        %img{:src => '/'}
+        %img{:src => '/'}
+
+      %section{:class => 'about'}
+        %span{:class => 'mobile'} 0400000000
+        %h2 About Us
+        %p we bla bla
+        %img{:src => '/', :alt => 'team images'}
+
+      %aside{:class => 'services'}
+        %ul
+          %li list item1
+        %span{:class => 'mobile'} 0400000000
+
+      %section{:class => 'contact'}
+        %div{:class => 'contact-form'} 
+          -# insert widget here
+        %aside{:class => 'map'}
+          -# insert google map here
+
+    %footer
+      %ul
+        %li asdads@autoelectrics.com.au
+        %li{:class => 'mobile'} 0400000000
+        %li
+          %a{:src => '/'}
+            %img{:src => '/'}
