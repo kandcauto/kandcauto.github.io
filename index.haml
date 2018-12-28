@@ -1,21 +1,24 @@
 !!! 5
 %html
   %head
-    %title K & C AutoElectrics
+    %title K&C Auto Electrics
+    %link{:rel => 'stylesheet', :href => './main.css'}
 
   %body
     %nav
       %ul
         %li
           %img{:src => 'http://haml.info/images/haml.png'}
-        %li Get a quote
+        %li You drive it, We fix it.
+        %li 
+          %a{:href => '#'} Get a quote
         %li{:class => 'mobile'} 0400000000
 
     %main
       %section{:class => 'hero'}
         %div{:class => 'mission'}
-          %h1 You drive it, We fix it.
-          %h2 etcetc
+          %h1 Fix Your Truck Fast
+          %h2 We repair and upgrade heavy vehicles and machinery, fast and effectively. You can come to us, or we can come to you. 24 hours a day, 7 days a week.
           %p etcetc
         %aside{:class => 'hero-image'}
 
@@ -27,24 +30,38 @@
       %section{:class => 'about'}
         %span{:class => 'mobile'} 0400000000
         %h2 About Us
-        %p we bla bla
+        %p Located in Western Sydney, K & C Auto Electrics is a well established business with over 25 years of experience. We currently service and are trusted by some of New South Wales major transport companies (such as?). Our workshop and mobile units are fully equipped with tools of the highest technology. We have the latest scanning tools on the market today to get your vehicle back on the road fast and keep your business running smoothly. 
         %img{:src => '/', :alt => 'team images'}
 
       %aside{:class => 'services'}
         %ul
-          %li list item1
+          %li Fix lights faults
+          %li Fix autoshift problems
+          %li Fix alternators & starters
+          %li Battery replacements
+          %li Vehicle upgrades
+          %li Install air conditioning
+          %li Provide fitouts
+          %li Fix rollback faults
+          %li Service heavy vehicles
+          %li Complete computer diagnostics
+          %li Service cranes
+          %li Service forklifts
+          %li Service bobcats
+          %li Service escavators
         %span{:class => 'mobile'} 0400000000
 
       %section{:class => 'contact'}
         %div{:class => 'contact-form'} 
           -# insert widget here
         %aside{:class => 'map'}
-          -# insert google map here
+          %iframe{:src => 'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d18753.10737704568!2d150.79361812494318!3d-33.80941367455066!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6bcac4dc51e5492!2sK+%26+C+Auto+Electrics!5e0!3m2!1sen!2sau!4v1546036997326', :width => '600', :height => '450', :frameborder => '0', :style => 'border:0', :allow => 'fullscreen'}
 
     %footer
       %ul
         %li asdads@autoelectrics.com.au
         %li{:class => 'mobile'} 0400000000
+        %li ABN: 1343241234
         %li
           %a{:src => '/'}
             %img{:src => '/'}
