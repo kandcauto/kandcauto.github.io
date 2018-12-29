@@ -55,11 +55,11 @@
         %div{:class => 'contact-form'} 
           %form{:action => 'https://formspree.io/adxm@msn.com', :method => 'post'}
             %label{:for => 'name'} Name
-            %input{:type => 'text', :id => 'name', :value => 'name'}
+            %input{:type => 'text', :id => 'name', :name => 'name', :placeholder => 'John Doe'}
             %label{:for => 'email'} Email
-            %input{:type => 'email', :id => 'email', :value => 'email'}
-            %label{:for => 'message', :value => 'message'} Message
-            %textarea{:id => 'message'}
+            %input{:type => 'email', :id => 'email', :name => 'email', :placeholder => 'johndoe@mail.com'}
+            %label{:for => 'message'} Message
+            %textarea{:id => 'message', :name='message', :placeholder => 'Hi, I\'m just wondering...'}
             %button{:type => 'submit'} Send
         %aside{:class => 'map'}
           %iframe{:src => 'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d18753.10737704568!2d150.79361812494318!3d-33.80941367455066!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6bcac4dc51e5492!2sK+%26+C+Auto+Electrics!5e0!3m2!1sen!2sau!4v1546036997326', :allow => 'fullscreen'}
