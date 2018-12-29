@@ -10,7 +10,7 @@
 <body>
 <div class='container'>
 <nav class='row'>
-<div class='nav-wrapper amber accent-4 col s12'>
+<div class='nav-wrapper  red accent-4 col s12'>
 <img src='http://haml.info/images/haml.png'>
 <span>You drive it, We fix it.</span>
 <ul class='right hide-on-med-and-down'>
@@ -18,7 +18,10 @@
 <strong>0409 602 968</strong>
 </li>
 <li>
-<a href='#contact'>Get a quote</a>
+<a href='#contact'>Get a Quote</a>
+</li>
+<li>
+<a href='#contact'>Find Us</a>
 </li>
 </ul>
 </div>
@@ -45,8 +48,8 @@ We repair and upgrade heavy vehicles and machinery, quickly and effectively. You
 <div id='benz'></div>
 </div>
 </section>
-<div class='row mobile2'>
-<h3 class='mobile col s12'>
+<div class='row mobile2-div'>
+<h3 class='mobile mobile2 col s12'>
 <img src='./assets/images/call.svg'>
 0409 602 968
 </h3>
@@ -63,7 +66,7 @@ We repair and upgrade heavy vehicles and machinery, quickly and effectively. You
 <img src='./assets/images/carousel/carousel-1.png'>
 </a>
 <a class='carousel-item' href='#two!'>
-<img class='carousel-item' src='./assets/images/carousel/carousel-2.png'>
+<img src='./assets/images/carousel/carousel-2.png'>
 </a>
 <a class='carousel-item' href='#three!'>
 <img src='./assets/images/carousel/carousel-3.png'>
@@ -153,14 +156,8 @@ We repair and upgrade heavy vehicles and machinery, quickly and effectively. You
 </ul>
 </aside>
 </div>
-<div class='row'>
-<h3 class='mobile mobile3 col s12'>
-0409 602 968
-<img src='./assets/images/call-flipped.png'>
-</h3>
-</div>
-<section class='contact' id='contact'>
-<div class='contact-form'>
+<section class='contact row' id='contact'>
+<div class='contact-form col s6'>
 <h2>Get in touch</h2>
 <form action='https://formspree.io/adxm@msn.com' method='post'>
 <div class='input-field'>
@@ -178,17 +175,36 @@ We repair and upgrade heavy vehicles and machinery, quickly and effectively. You
 <textarea class='materialize-textarea' id='message' name='message'></textarea>
 <label for='message'>Message</label>
 </div>
-<button class='amber accent-4 btn-small' type='submit'>Send</button>
+<button class='red darken-3 btn-small' type='submit'>Send</button>
 </form>
 </div>
-<aside class='map'>
-<iframe allow='fullscreen' src='https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d18753.10737704568!2d150.79361812494318!3d-33.80941367455066!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6bcac4dc51e5492!2sK+%26+C+Auto+Electrics!5e0!3m2!1sen!2sau!4v1546036997326'></iframe>
+<aside class='contact-details col s6'>
+<h4>Come To You</h4>
+<h3 class='mobile mobile3'>
+<i class='material-icons prefix'>phone</i>
+<span>0409 602 968</span>
+</h3>
+<h5>
+<i class='material-icons prefix'>email</i>
+<span>info@kandcautoelectrics.com.au</span>
+</h5>
+<h4>Come To Us</h4>
+<p>
+Our workshop is in the transport hub located at
+<strong>Unit 2/1 John Morphett Pl, Erskine Park.</strong>
+On the corner of Lenore Drive and John Morphett Place. It's within 5kM of the M7 Wallgrove Rd. and 3kM of the M4 Roper Rd.
+</p>
 </aside>
 </section>
 </main>
-<footer>
+<section class='map'>
+<iframe allow='fullscreen' src='https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d18753.10737704568!2d150.79361812494318!3d-33.80941367455066!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6bcac4dc51e5492!2sK+%26+C+Auto+Electrics!5e0!3m2!1sen!2sau!4v1546036997326'></iframe>
+</section>
+<footer class='red accent-4'>
 <ul>
-<li>asdads@autoelectrics.com.au</li>
+<li>
+<a href='mailto: info@kandcautoelectrics.com.au'>info@kandcautoelectrics.com.au</a>
+</li>
 <li class='mobile'>0409 602 968</li>
 <li>ABN: 1343241234</li>
 <li>

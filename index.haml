@@ -10,14 +10,16 @@
   %body
     %div{:class => 'container'}
       %nav{:class => 'row'}
-        %div{:class => 'nav-wrapper amber accent-4 col s12'}
+        %div{:class => 'nav-wrapper  red accent-4 col s12'}
           %img{:src => 'http://haml.info/images/haml.png'}
           %span You drive it, We fix it.
           %ul{:class => 'right hide-on-med-and-down'}
             %li{:class => 'mobile'} 
               %strong 0409 602 968
             %li 
-              %a{:href => '#contact'} Get a quote
+              %a{:href => '#contact'} Get a Quote
+            %li 
+              %a{:href => '#contact'} Find Us
 
       %main
         %section{:class => 'hero row'}
@@ -37,9 +39,8 @@
             %div{:id => 'volvo'}
             %div{:id => 'benz'}
 
-        %div{:class => 'row mobile2'}
-          
-          %h3{:class => 'mobile col s12'} 
+        %div{:class => 'row mobile2-div'}
+          %h3{:class => 'mobile mobile2 col s12'} 
             %img{:src => './assets/images/call.svg'}
             0409 602 968
 
@@ -53,7 +54,7 @@
               %a{:class => 'carousel-item', :href => '#one!'}
                 %img{:src => './assets/images/carousel/carousel-1.png'}
               %a{:class => 'carousel-item', :href => '#two!'}
-                %img{:src => './assets/images/carousel/carousel-2.png', :class => 'carousel-item'}
+                %img{:src => './assets/images/carousel/carousel-2.png'}
               %a{:class => 'carousel-item', :href => '#three!'}
                 %img{:src => './assets/images/carousel/carousel-3.png'}
               %a{:class => 'carousel-item', :href => '#four!'}
@@ -117,13 +118,8 @@
                 %img{:src => './assets/images/circleplus.svg'}
                 %span Service escavators
         
-        %div{:class => 'row'}
-          %h3{:class => 'mobile mobile3 col s12'} 
-            0409 602 968
-            %img{:src => './assets/images/call-flipped.png'}
-
-        %section{:class => 'contact', :id => 'contact' }
-          %div{:class => 'contact-form'} 
+        %section{:class => 'contact row', :id => 'contact' }
+          %div{:class => 'contact-form col s6'} 
             %h2 Get in touch
             %form{:action => 'https://formspree.io/adxm@msn.com', :method => 'post'}
               %div{:class => 'input-field'}
@@ -138,14 +134,31 @@
                 %i{:class => 'material-icons prefix'} message
                 %textarea{:id => 'message', :name => 'message', :class => 'materialize-textarea'}
                 %label{:for => 'message'} Message
-              %button{:type => 'submit', :class => 'amber accent-4 btn-small'} Send
+              %button{:type => 'submit', :class => 'red darken-3 btn-small'} Send
 
-          %aside{:class => 'map'}
-            %iframe{:src => 'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d18753.10737704568!2d150.79361812494318!3d-33.80941367455066!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6bcac4dc51e5492!2sK+%26+C+Auto+Electrics!5e0!3m2!1sen!2sau!4v1546036997326', :allow => 'fullscreen'}
+          %aside{:class => 'contact-details col s6'}
+            %h4 Come To You
+            %h3{:class => 'mobile mobile3'} 
+              %i{:class => 'material-icons prefix'} phone
+              %span 0409 602 968
+            %h5 
+              %i{:class => 'material-icons prefix'} email
+              %span info@kandcautoelectrics.com.au
 
-      %footer
+            %h4 Come To Us
+            %p 
+              Our workshop is in the transport hub located at 
+              %strong Unit 2/1 John Morphett Pl, Erskine Park. 
+              On the corner of Lenore Drive and John Morphett Place. It's within 5kM of the M7 Wallgrove Rd. and 3kM of the M4 Roper Rd.
+
+
+      %section{:class => 'map'}
+        %iframe{:src => 'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d18753.10737704568!2d150.79361812494318!3d-33.80941367455066!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6bcac4dc51e5492!2sK+%26+C+Auto+Electrics!5e0!3m2!1sen!2sau!4v1546036997326', :allow => 'fullscreen'}
+
+      %footer{:class => 'red accent-4'}
         %ul
-          %li asdads@autoelectrics.com.au
+          %li 
+            %a{:href => 'mailto: info@kandcautoelectrics.com.au'} info@kandcautoelectrics.com.au
           %li{:class => 'mobile'} 0409 602 968
           %li ABN: 1343241234
           %li
