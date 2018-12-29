@@ -1,8 +1,4 @@
-@font-face
-  font-family: 'Charter'
-  src: url(./../fonts/charter/charter_regular-webfont.woff) format('woff')
-  font-style: normal
-  font-weight: 400
+@import 'fonts'
 
 // Reset user stylesheet
 * 
@@ -29,7 +25,7 @@ footer li
     width: 100%
 
 .hero-image
-  width: 45%
+  width: 100%
   border-radius: 3%
 
 .nav-wrapper
@@ -74,3 +70,41 @@ footer li
   background-image: url('./../images/benz-light.png')
   &:hover
     background-image: url(./../images/benz-dark.png)
+
+.hero
+  h1
+    margin: 0
+    font-weight: 700
+
+  h2
+    font-size: 250%
+
+
+.about p
+  font-size: 150%
+
+.services
+  h2
+    text-align: center
+
+  ul
+    width: 75%
+    float: right
+
+  li
+    margin-bottom: .25em
+
+    span
+      font-size: 150%
+
+.mobile3
+  text-align: right
+
+// /* label focus color */
+// .input-field:focus
+//   color: #FFAB00
+
+// /* label underline focus color */
+// .input-field:focus
+//   border-bottom: 1px solid #FFAB00
+//   box-shadow: 0 1px 0 0 #FFAB00

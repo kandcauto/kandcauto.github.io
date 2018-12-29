@@ -3,6 +3,11 @@
   src: url(./../fonts/charter/charter_regular-webfont.woff) format("woff");
   font-style: normal;
   font-weight: 400; }
+@font-face {
+  font-family: "Charter";
+  src: url(./../fonts/charter/charter_bold-webfont.woff) format("woff");
+  font-style: bold;
+  font-weight: 700; }
 * {
   margin: 0;
   padding: 0;
@@ -26,7 +31,7 @@ footer li {
     width: 100%; }
 
 .hero-image {
-  width: 45%;
+  width: 100%;
   border-radius: 3%; }
 
 .nav-wrapper img {
@@ -69,5 +74,27 @@ footer li {
   background-image: url("./../images/benz-light.png"); }
   #benz:hover {
     background-image: url(./../images/benz-dark.png); }
+
+.hero h1 {
+  margin: 0;
+  font-weight: 700; }
+.hero h2 {
+  font-size: 250%; }
+
+.about p {
+  font-size: 150%; }
+
+.services h2 {
+  text-align: center; }
+.services ul {
+  width: 75%;
+  float: right; }
+.services li {
+  margin-bottom: 0.25em; }
+  .services li span {
+    font-size: 150%; }
+
+.mobile3 {
+  text-align: right; }
 
 /*# sourceMappingURL=main.css.map */
