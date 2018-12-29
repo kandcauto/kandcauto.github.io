@@ -22,7 +22,9 @@
         %section{:class => 'hero row'}
           %div{:class => 'mission col s6'}
             %h1 Fix Your Truck, Fast
-            %h2 We repair and upgrade heavy vehicles and machinery, quickly and effectively. You can come to us, or we can come to you. 24 hours a day, 7 days a week.
+            %h2 
+              We repair and upgrade heavy vehicles and machinery, quickly and effectively. You can come to us, or we can come to you.
+              %span 24 hours a day, 7 days a week.
           %aside{:class => 'col s6'}
             %img{:class => 'hero-image', :src => './assets/images/hero.jpg'}
           
@@ -34,10 +36,13 @@
             %div{:id => 'volvo'}
             %div{:id => 'benz'}
 
-        %div{:class => 'row'}
-          %span{:class => 'mobile col s12'} 0409 602 968
+        %div{:class => 'row mobile2'}
+          
+          %h3{:class => 'mobile col s12'} 
+            %img{:src => './assets/images/call.svg'}
+            0409 602 968
 
-        %div{:class => 'row'}
+        %div{:class => 'row about-services'}
           %section{:class => 'about col s6'}
             %h2 About Us
             %p Located in Western Sydney, K & C Auto Electrics is a well established business with over 25 years of experience. We currently service and are trusted by some of New South Wales major transport companies (such as?). Our workshop and mobile units are fully equipped with tools of the highest technology. We have the latest scanning tools on the market today to get your vehicle back on the road fast and keep your business running smoothly. 
@@ -112,7 +117,9 @@
                 %span Service escavators
         
         %div{:class => 'row'}
-          %span{:class => 'mobile mobile3 col s12'} 0409 602 968
+          %h3{:class => 'mobile mobile3 col s12'} 
+            0409 602 968
+            %img{:src => './assets/images/call-flipped.png'}
 
         %section{:class => 'contact'}
           %div{:class => 'contact-form'} 

@@ -14,25 +14,40 @@
   box-sizing: border-box; }
 
 body {
-  font-family: "Charter"; }
+  font-family: "Charter";
+  background-color: #EDF1F5; }
+
+.container {
+  border-left: 1px solid #BAC3CE;
+  border-right: 1px solid #BAC3CE;
+  background-color: #F5F7FA; }
+
+.mission h2 span {
+  border-bottom: 3px solid #94a3b8; }
 
 iframe {
   width: 100%;
   height: 350px;
-  border: 0; }
+  border: 0;
+  padding: 0 1rem; }
 
-footer li {
-  display: inline; }
+footer {
+  height: 50px; }
+  footer li {
+    margin-left: 1rem;
+    display: inline; }
 
 .contact-form {
   width: 40%;
-  margin-bottom: 2em; }
+  margin-bottom: 2em;
+  margin-left: 1rem; }
   .contact-form button {
     width: 100%; }
 
 .hero-image {
   width: 100%;
-  border-radius: 3%; }
+  border-radius: 3%;
+  padding-right: 0.5rem; }
 
 .nav-wrapper img {
   width: 10%;
@@ -75,35 +90,59 @@ footer li {
   #benz:hover {
     background-image: url(./../images/benz-dark.png); }
 
-.hero h1 {
-  margin: 0;
-  font-weight: 700;
-  color: #11253E; }
-.hero h2 {
-  font-size: 250%;
-  color: #11253E; }
+.hero {
+  padding-top: 1rem;
+  margin-bottom: 4rem; }
+  .hero h1 {
+    margin: 0 0 0 1rem;
+    font-weight: 700;
+    color: #11253E; }
+  .hero h2 {
+    font-size: 200%;
+    color: #1b3c64;
+    margin-left: 1rem;
+    line-height: 3.5rem; }
 
 .about p {
-  font-size: 150%; }
+  font-size: 150%;
+  padding-left: 1rem;
+  color: #214878; }
+.about h2 {
+  color: #11253E;
+  padding-left: 1rem; }
 
 .services h2 {
   text-align: center;
   color: #11253E; }
 .services ul {
   width: 75%;
-  float: right; }
+  float: right;
+  padding-left: 1rem;
+  border-left: 1px solid #d7e4f4; }
 .services li {
   margin-bottom: 0.25em; }
   .services li span {
-    font-size: 150%; }
+    font-size: 150%;
+    color: #163050; }
+
+.about-services {
+  margin-bottom: 0; }
+
+h3.mobile {
+  font-weight: 900;
+  font-size: 200%;
+  color: #0a0c0f; }
 
 .mobile3 {
+  margin-top: 0;
   text-align: right; }
+  .mobile3 img {
+    width: 25px;
+    height: 25px; }
 
 .carousel {
-  height: 250px; }
-
-.about h2 {
-  color: #11253E; }
+  height: 250px;
+  margin-top: 1rem;
+  margin-left: 1rem; }
 
 /*# sourceMappingURL=main.css.map */
