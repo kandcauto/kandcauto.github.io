@@ -77,15 +77,18 @@ footer li {
 
 .hero h1 {
   margin: 0;
-  font-weight: 700; }
+  font-weight: 700;
+  color: #11253E; }
 .hero h2 {
-  font-size: 250%; }
+  font-size: 250%;
+  color: #11253E; }
 
 .about p {
   font-size: 150%; }
 
 .services h2 {
-  text-align: center; }
+  text-align: center;
+  color: #11253E; }
 .services ul {
   width: 75%;
   float: right; }
@@ -96,5 +99,11 @@ footer li {
 
 .mobile3 {
   text-align: right; }
+
+.carousel {
+  height: 250px; }
+
+.about h2 {
+  color: #11253E; }
 
 /*# sourceMappingURL=main.css.map */
