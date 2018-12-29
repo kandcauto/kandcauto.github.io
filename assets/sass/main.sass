@@ -1,8 +1,4 @@
-@font-face
-  font-family: 'Charter'
-  src: url(./../fonts/charter/charter_regular-webfont.woff) format('woff')
-  font-style: normal
-  font-weight: 400
+@import 'fonts'
 
 // Reset user stylesheet
 * 
@@ -12,18 +8,216 @@
 
 body
   font-family: 'Charter'
+  background-color: #EDF1F5
+
+.container
+  border-left: 1px solid #BAC3CE
+  border-right: 1px solid #BAC3CE
+  background-color: #F5F7FA
+
+.mission h2 span
+  border-bottom: 3px solid #94a3b8
 
 iframe
   width: 100%
   height: 350px
   border: 0
+  padding: 0 1rem
+  margin-bottom: 1rem
 
-footer li
-  display: inline
+footer
+  height: 50px
+  border-top: 1px solid #BAC3CE
+
+  ul
+    padding-top: 5px
+        
+  li
+    color: white
+    margin-left: 1rem
+    display: inline
+    font-size: 125%
+
+    a 
+      font-weight: 400
+      color: white
+
+      &:hover
+        color: #11253E
+
+      img
+        width: 40px
+        float: right
+        margin-right: 1rem
+
+
+.contact-details
+  h4
+    margin-top: 0
+    color: #11253E
+
+  p 
+    font-size: 125%
+    color: #52637a
+
+    strong
+      font-weight: 700
+      color: #11253E
+
+  h5
+    padding-bottom: 1rem
+    color: #52637a
+
+    i
+      color: #11253E
+
+  h3
+    color: #52637a
+    font-size: 200%
+    
+    i
+      color: #11253E
+
+  h5
+    margin-bottom: 1rem
 
 .contact-form
   width: 40%
   margin-bottom: 2em
+  margin-left: 1rem
 
   button
     width: 100%
+
+  h2
+    margin-top: 0
+    color: #11253E
+
+.hero-image
+  width: 100%
+  border-radius: 3%
+  padding-right: .5rem
+
+.nav-wrapper
+  img
+    width: 10%
+    margin: auto
+
+  ul li
+    padding-left: 1em
+
+    strong
+      font-weight: 900
+      font-size: 115%
+
+    a
+      font-size: 125%
+
+  span
+    font-weight: 700
+
+.partners .flex-container
+  display: inline-flex
+  width: 100%
+
+  div
+    height: 50px
+    width: 18%
+    background-size: 100%
+    background-repeat: no-repeat
+    margin: auto
+
+#freightliner
+  background-image: url(./../images/freightliner-light.png)
+  &:hover
+    background-image: url(./../images/freightliner-dark.png)
+
+#isuzu
+  background-image: url(./../images/isuzu-light.png)
+  &:hover
+    background-image: url(./../images/isuzu-dark.png)
+
+#westernstar
+  background-image: url(./../images/westernstar-light.png)
+  &:hover
+    background-image: url(./../images/westernstar-dark.png)
+  
+#volvo
+  background-image: url('./../images/volvo-light.png')
+  &:hover
+    background-image: url(./../images/volvo-dark.png)
+
+#benz
+  background-image: url('./../images/benz-light.png')
+  &:hover
+    background-image: url(./../images/benz-dark.png)
+
+.hero
+  padding-top: 1rem
+  margin-bottom: 4rem
+
+  h1
+    margin: 0 0 0 1rem
+    font-weight: 700
+    color: #11253E
+
+  h2
+    font-size: 200%
+    color: #1b3c64
+    margin-left: 1rem
+    line-height: 3.5rem
+
+
+.about
+  p
+    font-size: 150%
+    padding-left: 1rem
+    color: #214878
+
+  h2
+    color: #11253E
+    padding-left: 1rem
+
+.services
+  h2
+    text-align: center
+    color: #11253E
+
+  ul
+    width: 75%
+    float: right
+    padding-left: 1rem
+    border-left: 1px solid #d7e4f4
+
+  li
+    margin-bottom: .25em
+
+    span
+      font-size: 150%
+      color: #163050
+
+.about-services
+  margin-bottom: 0
+
+.mobile2-div
+  margin-left: 1rem
+
+.mobile2
+  color: #D32F2F
+  font-size: 250%
+  letter-spacing: .1rem
+
+.mobile3
+  margin-top: 0
+
+  img
+    width: 25px
+    height: 25px
+
+.carousel
+  height: 250px
+  margin-top: 1rem
+  margin-left: 1rem
+
+.input-field i.prefix.active
+  color: #B71C1C
