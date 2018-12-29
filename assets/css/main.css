@@ -25,4 +25,13 @@ footer li {
   .contact-form button {
     width: 100%; }
 
+.partners .flex-container {
+  display: inline-flex; }
+  .partners .flex-container li {
+    width: 100%; }
+    .partners .flex-container li img {
+      display: block;
+      width: 90%;
+      margin: 0 auto; }
+
 /*# sourceMappingURL=main.css.map */
