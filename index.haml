@@ -2,73 +2,87 @@
 %html
   %head
     %title K&C Auto Electrics
-    %link{:rel => 'stylesheet', :href => './main.css'}
+    %link{:rel => 'stylesheet', :href => 'https://fonts.googleapis.com/icon?family=Material+Icons'}
+    %link{:rel => 'stylesheet', :type => 'text/css', :href => './assets/css/materialize.min.css', :media => 'screen,projection'}
+    %meta{:name => 'viewport', :content => 'width=device-width', :initial-scale => '1.0'}
+    %link{:rel => 'stylesheet', :href => './assets/css/main.css'}
 
   %body
-    %nav
-      %ul
-        %li
-          %img{:src => 'http://haml.info/images/haml.png'}
-        %li You drive it, We fix it.
-        %li 
-          %a{:href => '#'} Get a quote
-        %li{:class => 'mobile'} 0400000000
-
-    %main
-      %section{:class => 'hero'}
-        %div{:class => 'mission'}
-          %h1 Fix Your Truck Fast
-          %h2 We repair and upgrade heavy vehicles and machinery, fast and effectively. You can come to us, or we can come to you. 24 hours a day, 7 days a week.
-          %p etcetc
-        %aside{:class => 'hero-image'}
-
-      %section{:class => 'partners'}
-        %img{:src => '/'}
-        %img{:src => '/'}
-        %img{:src => '/'}
-
-      %section{:class => 'about'}
-        %span{:class => 'mobile'} 0400000000
-        %h2 About Us
-        %p Located in Western Sydney, K & C Auto Electrics is a well established business with over 25 years of experience. We currently service and are trusted by some of New South Wales major transport companies (such as?). Our workshop and mobile units are fully equipped with tools of the highest technology. We have the latest scanning tools on the market today to get your vehicle back on the road fast and keep your business running smoothly. 
-        %img{:src => '/', :alt => 'team images'}
-
-      %aside{:class => 'services'}
+    %div{:class => 'container'}
+      %nav
         %ul
-          %li Fix lights faults
-          %li Fix autoshift problems
-          %li Fix alternators & starters
-          %li Battery replacements
-          %li Vehicle upgrades
-          %li Install air conditioning
-          %li Provide fitouts
-          %li Fix rollback faults
-          %li Service heavy vehicles
-          %li Complete computer diagnostics
-          %li Service cranes
-          %li Service forklifts
-          %li Service bobcats
-          %li Service escavators
-        %span{:class => 'mobile'} 0400000000
+          %li
+            %img{:src => 'http://haml.info/images/haml.png'}
+          %li You drive it, We fix it.
+          %li 
+            %a{:href => '#'} Get a quote
+          %li{:class => 'mobile'} 0400000000
 
-      %section{:class => 'contact'}
-        %div{:class => 'contact-form'} 
-          %form{:action => 'https://formspree.io/adxm@msn.com', :method => 'post'}
-            %label{:for => 'name'} Name
-            %input{:type => 'text', :id => 'name', :name => 'name', :placeholder => 'John Doe'}
-            %label{:for => 'email'} Email
-            %input{:type => 'email', :id => 'email', :name => 'email', :placeholder => 'johndoe@mail.com'}
-            %label{:for => 'message'} Message
-            %textarea{:id => 'message', :name => 'message', :placeholder => 'Hi, I\'m just wondering...'}
-            %button{:type => 'submit'} Send
-        %aside{:class => 'map'}
-          %iframe{:src => 'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d18753.10737704568!2d150.79361812494318!3d-33.80941367455066!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6bcac4dc51e5492!2sK+%26+C+Auto+Electrics!5e0!3m2!1sen!2sau!4v1546036997326', :allow => 'fullscreen'}
+      %main
+        %section{:class => 'hero'}
+          %div{:class => 'mission'}
+            %h1 Fix Your Truck Fast
+            %h2 We repair and upgrade heavy vehicles and machinery, fast and effectively. You can come to us, or we can come to you. 24 hours a day, 7 days a week.
+            %p etcetc
+          %aside{:class => 'hero-image'}
 
-    %footer
-      %ul
-        %li asdads@autoelectrics.com.au
-        %li{:class => 'mobile'} 0400000000
-        %li ABN: 1343241234
-        %li
-          %a{:src => '/'}
-            %img{:src => '/'}
+        %section{:class => 'partners'}
+          %img{:src => '/'}
+          %img{:src => '/'}
+          %img{:src => '/'}
+
+        %section{:class => 'about'}
+          %span{:class => 'mobile'} 0400000000
+          %h2 About Us
+          %p Located in Western Sydney, K & C Auto Electrics is a well established business with over 25 years of experience. We currently service and are trusted by some of New South Wales major transport companies (such as?). Our workshop and mobile units are fully equipped with tools of the highest technology. We have the latest scanning tools on the market today to get your vehicle back on the road fast and keep your business running smoothly. 
+          %img{:src => '/', :alt => 'team images'}
+
+        %aside{:class => 'services'}
+          %ul
+            %li Fix lights faults
+            %li Fix autoshift problems
+            %li Fix alternators & starters
+            %li Battery replacements
+            %li Vehicle upgrades
+            %li Install air conditioning
+            %li Provide fitouts
+            %li Fix rollback faults
+            %li Service heavy vehicles
+            %li Complete computer diagnostics
+            %li Service cranes
+            %li Service forklifts
+            %li Service bobcats
+            %li Service escavators
+          %span{:class => 'mobile'} 0400000000
+
+        %section{:class => 'contact'}
+          %div{:class => 'contact-form'} 
+            %h2 Get in touch
+            %form{:action => 'https://formspree.io/adxm@msn.com', :method => 'post'}
+              %div{:class => 'input-field'}
+                %i{:class => 'material-icons prefix'} account_circle
+                %input{:type => 'text', :id => 'icon_prefix', :name => 'name', :class => 'validate'}
+                %label{:for => 'icon_prefix'} Name
+              %div{:class => 'input-field'}
+                %i{:class => 'material-icons prefix'} email
+                %input{:type => 'email', :id => 'email_inline', :name => 'email', :class => 'validate'}
+                %label{:for => 'email_inline'} Email
+              %div{:class => 'input-field'}
+                %i{:class => 'material-icons prefix'} message
+                %textarea{:id => 'message', :name => 'message', :class => 'materialize-textarea'}
+                %label{:for => 'message'} Message
+              %button{:type => 'submit', :class => 'waves-effect waves-light btn-small'} Send
+
+          %aside{:class => 'map'}
+            %iframe{:src => 'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d18753.10737704568!2d150.79361812494318!3d-33.80941367455066!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6bcac4dc51e5492!2sK+%26+C+Auto+Electrics!5e0!3m2!1sen!2sau!4v1546036997326', :allow => 'fullscreen'}
+
+      %footer
+        %ul
+          %li asdads@autoelectrics.com.au
+          %li{:class => 'mobile'} 0400000000
+          %li ABN: 1343241234
+          %li
+            %a{:src => '/'}
+              %img{:src => '/'}
+
+      %script{:type => 'text/javascript', :src => './assets/js/materialize.min.js'}

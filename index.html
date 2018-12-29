@@ -2,9 +2,13 @@
 <html>
 <head>
 <title>K&C Auto Electrics</title>
-<link href='./main.css' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/icon?family=Material+Icons' rel='stylesheet'>
+<link href='./assets/css/materialize.min.css' media='screen,projection' rel='stylesheet' type='text/css'>
+<meta content='width=device-width' initial='1.0' name='viewport'>
+<link href='./assets/css/main.css' rel='stylesheet'>
 </head>
 <body>
+<div class='container'>
 <nav>
 <ul>
 <li>
@@ -58,14 +62,24 @@
 </aside>
 <section class='contact'>
 <div class='contact-form'>
+<h2>Get in touch</h2>
 <form action='https://formspree.io/adxm@msn.com' method='post'>
-<label for='name'>Name</label>
-<input id='name' name='name' placeholder='John Doe' type='text'>
-<label for='email'>Email</label>
-<input id='email' name='email' placeholder='johndoe@mail.com' type='email'>
+<div class='input-field'>
+<i class='material-icons prefix'>account_circle</i>
+<input class='validate' id='icon_prefix' name='name' type='text'>
+<label for='icon_prefix'>Name</label>
+</div>
+<div class='input-field'>
+<i class='material-icons prefix'>email</i>
+<input class='validate' id='email_inline' name='email' type='email'>
+<label for='email_inline'>Email</label>
+</div>
+<div class='input-field'>
+<i class='material-icons prefix'>message</i>
+<textarea class='materialize-textarea' id='message' name='message'></textarea>
 <label for='message'>Message</label>
-<textarea id='message' name='message' placeholder='Hi, I&#39;m just wondering...'></textarea>
-<button type='submit'>Send</button>
+</div>
+<button class='waves-effect waves-light btn-small' type='submit'>Send</button>
 </form>
 </div>
 <aside class='map'>
@@ -85,5 +99,7 @@
 </li>
 </ul>
 </footer>
+<script src='./assets/js/materialize.min.js' type='text/javascript'></script>
+</div>
 </body>
 </html>
