@@ -10,13 +10,13 @@
   %body
     %div{:class => 'container'}
       %nav
-        %ul
-          %li
-            %img{:src => 'http://haml.info/images/haml.png'}
-          %li You drive it, We fix it.
-          %li 
-            %a{:href => '#'} Get a quote
-          %li{:class => 'mobile'} 0400000000
+        %div{:class => 'nav-wrapper amber accent-4'}
+          %img{:src => 'http://haml.info/images/haml.png'}
+          %span You drive it, We fix it.
+          %ul{:class => 'right hide-on-med-and-down'}
+            %li{:class => 'mobile'} 0400000000
+            %li 
+              %a{:href => '#Get-in-touch'} Get a quote
 
       %main
         %section{:class => 'hero'}
@@ -24,20 +24,16 @@
             %h1 Fix Your Truck Fast
             %h2 We repair and upgrade heavy vehicles and machinery, fast and effectively. You can come to us, or we can come to you. 24 hours a day, 7 days a week.
             %p etcetc
-          %aside{:class => 'hero-image'}
-
+          %aside
+            %img{:class => 'hero-image', :src => './assets/images/hero.jpg'}
+          
         %section{:class => 'partners'}
-          %ul{:class => 'flex-container'}
-            %li
-              %img{:src => './assets/images/freightliner-light.png'}
-            %li
-              %img{:src => './assets/images/isuzu-light.png'}
-            %li
-              %img{:src => './assets/images/westernstar-light.png'}
-            %li
-              %img{:src => './assets/images/volvo-light.png'}
-            %li
-              %img{:src => './assets/images/benz-light.png'}
+          %div{:class => 'flex-container'}
+            %div{:id => 'freightliner'}
+            %div{:id => 'isuzu'}
+            %div{:id => 'westernstar'}
+            %div{:id => 'volvo'}
+            %div{:id => 'benz'}
 
         %section{:class => 'about'}
           %span{:class => 'mobile'} 0400000000
