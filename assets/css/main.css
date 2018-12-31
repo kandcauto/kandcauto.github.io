@@ -50,12 +50,12 @@ footer {
         color: #11253E; }
       footer li a img {
         width: 40px;
-        float: right;
-        margin-right: 1rem; }
+        float: right; }
 
 .contact-details h4 {
   margin-top: 0;
-  color: #11253E; }
+  color: #11253E;
+  font-weight: 700; }
 .contact-details p {
   font-size: 125%;
   color: #52637a; }
@@ -85,10 +85,14 @@ footer {
     margin-top: 0;
     color: #11253E; }
 
-.hero-image {
+.hero-image,
+.team-image {
   width: 100%;
   border-radius: 3%;
   margin-right: 1rem; }
+
+.team-image {
+  margin-top: 1rem; }
 
 .nav-wrapper img {
   width: 10%;
@@ -199,6 +203,13 @@ footer {
 .input-field i.prefix.active {
   color: #B71C1C; }
 
+#contact-title {
+  font-size: 70%; }
+
+#mobile-num,
+#workshop-num {
+  color: #3d4a5c; }
+
 @media only screen and (max-width: 580px) {
   .container {
     width: 100% !important; }
@@ -210,7 +221,7 @@ footer {
     margin: 0; }
 
   .mobile2 {
-    margin: 0;
+    margin: 2rem 0 0 0;
     text-align: center; }
 
   .partners {
