@@ -6,7 +6,7 @@
 @font-face {
   font-family: "Charter";
   src: url(./../fonts/charter/charter_bold-webfont.woff) format("woff");
-  font-style: bold;
+  font-style: normal;
   font-weight: 700; }
 * {
   margin: 0;
@@ -14,7 +14,7 @@
   box-sizing: border-box; }
 
 body {
-  font-family: "Charter";
+  font-family: "Charter", sans-serif;
   background-color: #EDF1F5; }
 
 .container {
@@ -38,19 +38,26 @@ footer {
   margin-bottom: 0 !important; }
   footer ul {
     padding-top: 5px; }
-  footer li {
-    color: white;
-    margin-left: 1rem;
-    display: inline;
-    font-size: 125%; }
-    footer li a {
-      font-weight: 400;
-      color: white; }
-      footer li a:hover {
-        color: #11253E; }
-      footer li a img {
-        width: 40px;
-        float: right; }
+    footer ul li {
+      color: white;
+      margin-left: 1rem;
+      display: inline;
+      font-size: 125%; }
+      footer ul li a {
+        font-weight: 400;
+        color: white; }
+        footer ul li a:hover {
+          color: #11253E; }
+        footer ul li a img {
+          width: 40px;
+          float: right; }
+
+address {
+  font-weight: 700;
+  color: #11253E;
+  display: inline;
+  font-style: normal;
+  font-size: 120%; }
 
 .contact-details h4 {
   margin-top: 0;
@@ -58,10 +65,8 @@ footer {
   font-weight: 700; }
 .contact-details p {
   font-size: 125%;
-  color: #52637a; }
-  .contact-details p strong {
-    font-weight: 700;
-    color: #11253E; }
+  color: #52637a;
+  display: inline; }
 .contact-details h5 {
   padding-bottom: 1rem;
   color: #52637a; }
@@ -210,7 +215,14 @@ footer {
 #workshop-num {
   color: #3d4a5c; }
 
+.hours {
+  font-weight: 700;
+  color: #11253E; }
+
 @media only screen and (max-width: 580px) {
+  label {
+    width: 80% !important; }
+
   .container {
     width: 100% !important; }
 
@@ -239,17 +251,20 @@ footer {
   .contact {
     margin-top: 2rem; }
 
+  .contact-details span {
+    font-size: 85%; }
+
   .contact-details h4 {
     text-align: center;
     margin-top: 1rem; }
 
   footer li {
-    font-size: 70%;
-    color: black; }
+    font-size: 60% !important;
+    color: black !important; }
     footer li a {
-      color: black; }
+      color: black !important; }
       footer li a img {
-        margin-right: 0; }
+        margin-right: 0 !important; }
 
   .carousel {
     margin-left: 0; }

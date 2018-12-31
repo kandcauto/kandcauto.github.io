@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 });
 
-$(document).ready(function(){
-  $('.sidenav').sidenav();
-});
+// $(document).ready(function(){
+//   $('.sidenav').sidenav();
+// });
      

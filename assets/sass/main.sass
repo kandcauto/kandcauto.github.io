@@ -7,7 +7,7 @@
   box-sizing: border-box
 
 body
-  font-family: 'Charter'
+  font-family: 'Charter', sans-serif
   background-color: #EDF1F5
 
 .container
@@ -33,23 +33,29 @@ footer
   ul
     padding-top: 5px
         
-  li
-    color: white
-    margin-left: 1rem
-    display: inline
-    font-size: 125%
-
-    a 
-      font-weight: 400
+    li
       color: white
+      margin-left: 1rem
+      display: inline
+      font-size: 125%
 
-      &:hover
-        color: #11253E
+      a 
+        font-weight: 400
+        color: white
 
-      img
-        width: 40px
-        float: right
+        &:hover
+          color: #11253E
 
+        img
+          width: 40px
+          float: right
+
+address
+  font-weight: 700
+  color: #11253E
+  display: inline
+  font-style: normal
+  font-size: 120%
 
 .contact-details
   h4
@@ -60,10 +66,7 @@ footer
   p 
     font-size: 125%
     color: #52637a
-
-    strong
-      font-weight: 700
-      color: #11253E
+    display: inline
 
   h5
     padding-bottom: 1rem
@@ -115,7 +118,6 @@ footer
     strong
       font-weight: 900
       font-size: 115%
-
     a
       font-size: 125%
 
@@ -172,7 +174,6 @@ footer
     color: #1b3c64
     margin-left: 1rem
     line-height: 3.5rem
-
 
 .about
   p
@@ -235,5 +236,8 @@ footer
 #workshop-num
   color: #3d4a5c
 
-@import 'media'
+.hours
+  font-weight: 700
+  color: #11253E
 
+@import 'media'
