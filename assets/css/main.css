@@ -46,7 +46,8 @@ footer {
       color: white;
       margin-left: 1rem;
       display: inline;
-      font-size: 125%; }
+      font-size: 100%;
+      font-style: italic; }
       footer ul li a {
         font-weight: 400;
         color: white; }
