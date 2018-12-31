@@ -7,7 +7,7 @@
   box-sizing: border-box
 
 body
-  font-family: 'Charter'
+  font-family: 'Charter', sans-serif
   background-color: #EDF1F5
 
 .container
@@ -28,41 +28,45 @@ iframe
 footer
   height: 50px
   border-top: 1px solid #BAC3CE
+  margin-bottom: 0 !important
 
   ul
     padding-top: 5px
         
-  li
-    color: white
-    margin-left: 1rem
-    display: inline
-    font-size: 125%
-
-    a 
-      font-weight: 400
+    li
       color: white
+      margin-left: 1rem
+      display: inline
+      font-size: 125%
 
-      &:hover
-        color: #11253E
+      a 
+        font-weight: 400
+        color: white
 
-      img
-        width: 40px
-        float: right
-        margin-right: 1rem
+        &:hover
+          color: #11253E
 
+        img
+          width: 40px
+          float: right
+
+address
+  font-weight: 700
+  color: #11253E
+  display: inline
+  font-style: normal
+  font-size: 120%
 
 .contact-details
   h4
     margin-top: 0
     color: #11253E
+    font-weight: 700
 
   p 
     font-size: 125%
     color: #52637a
-
-    strong
-      font-weight: 700
-      color: #11253E
+    display: inline
 
   h5
     padding-bottom: 1rem
@@ -93,15 +97,20 @@ footer
     margin-top: 0
     color: #11253E
 
-.hero-image
+.hero-image,
+.team-image
   width: 100%
   border-radius: 3%
-  padding-right: .5rem
+  margin-right: 1rem
+
+.team-image
+  margin-top: 1rem
 
 .nav-wrapper
   img
     width: 10%
-    margin: auto
+    margin: auto 1rem auto auto
+    padding-top: 10px
 
   ul li
     padding-left: 1em
@@ -109,7 +118,6 @@ footer
     strong
       font-weight: 900
       font-size: 115%
-
     a
       font-size: 125%
 
@@ -167,7 +175,6 @@ footer
     margin-left: 1rem
     line-height: 3.5rem
 
-
 .about
   p
     font-size: 150%
@@ -221,3 +228,16 @@ footer
 
 .input-field i.prefix.active
   color: #B71C1C
+
+#contact-title
+  font-size: 70%
+
+#mobile-num,
+#workshop-num
+  color: #3d4a5c
+
+.hours
+  font-weight: 700
+  color: #11253E
+
+@import 'media'
