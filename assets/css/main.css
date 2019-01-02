@@ -295,6 +295,12 @@ address {
 
   .services ul {
     width: 100%;
-    border: 0; } }
+    border: 0; }
+
+  .social-icon {
+    margin-right: 0.5rem; } }
+@media only screen and (min-width: 1401px) {
+  .social-icon {
+    margin-right: 0.5rem; } }
 
 /*# sourceMappingURL=main.css.map */
