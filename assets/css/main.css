@@ -215,7 +215,8 @@ address {
   color: #B71C1C; }
 
 #contact-title {
-  font-size: 70%; }
+  font-size: 70%;
+  padding-left: 1rem; }
 
 #mobile-num,
 #workshop-num {
